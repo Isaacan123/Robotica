@@ -53,7 +53,7 @@
 
 ## 5) Instalación
 
-```bash
+```CPP
 # 1) Clonar
 git clone https://github.com/<usuario>/<repo>.git
 cd <repo>
