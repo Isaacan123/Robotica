@@ -2,6 +2,8 @@
 
 > Documentación del análisis matemático para rotaciones y traslaciones espaciales.
 
+![Homogeneous Transformation Coordinate Frames](image_0.png)
+
 ---
 
 ## 1) Resumen
@@ -52,6 +54,8 @@
 
 ### Exercise 1: Multiplicación por la Izquierda
 
+![Successive Rotations around Fixed Axes](image_1.png)
+
 First Rotation in YA with angle = 45 degrees.
 Second Rotation in XA with angle = 60 degrees.
 
@@ -74,6 +78,8 @@ Second Rotation in XA with angle = 60 degrees.
 
 ### Exercise 2: Integración de Rotación y Traslación
 
+![Combined Translation and Rotation](image_2.png)
+
 The frame B is rotating relative to A in X with angle = 30 degrees, with ApB origin = [5, 10, 0].
 
 Matriz de transformación final (A_B T):
@@ -87,6 +93,8 @@ Se coloca la rotación en X (30°) en el bloque 3x3 y el vector de origen en la 
 ---
 
 ### Exercise 3: Análisis de Traslaciones Múltiples
+
+![Multiple Reference Frames](image_3.png)
 
 For A_B T we have our origin in ApB origin [3, 0, 0].
 Primera matriz de traslación pura (A_B T):
