@@ -1,5 +1,5 @@
-#  ROS2 Service Server: Reset Counter
-#  Lab 01 – ROS2 Service Server Implementation
+#  ROS2 
+#  Work ROS BASICS CAPSTONE
 
 
 - **Proyecto:** Work Ros Basics Capstone
@@ -355,4 +355,5 @@ terminal 3:
 
 TurtleSim program runs
 ![publisher](../docs/recursos/imgs/runturtle.png)
+
 
