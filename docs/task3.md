@@ -121,48 +121,5 @@ pretty(T_final)
 ### Final Matrix
 -This the final matrix given by the MatLab code.
 
-# 🤖 Forward Kinematics Result: Final Transformation Matrix
 
-Al ejecutar las iteraciones de las matrices de paso utilizando los parámetros de Denavit-Hartenberg proporcionados, obtenemos la Matriz de Transformación Homogénea Final $T_{0}^{6}$. 
-
-Dado el nivel de complejidad simbólica, la matriz se divide en sus componentes de Orientación (Matriz de Rotación $R$) y Traslación (Vector de Posición $P$):
-
-$$
-T_{0}^{6} = \begin{bmatrix} 
-R_{11} & R_{12} & R_{13} & P_x \\
-R_{21} & R_{22} & R_{23} & P_y \\
-R_{31} & R_{32} & R_{33} & P_z \\
-0 & 0 & 0 & 1 
-\end{bmatrix}
-$$
-
----
-
-## 📍 1. Vector de Posición (Traslación $P$)
-Las ecuaciones cinemáticas para la posición final del efector (X, Y, Z) son:
-
-* **$P_x =$** $l_{2} \cos(q_{0}) - l_{4} \cos(q_{0}) - l_{5} \sin(q_{0}) \sin(q_{1} + q_{2}) + l_{6} \cos(q_{0}) - l_{7} \sin(q_{0}) \sin(q_{1} + q_{2} + q_{3}) - l_{8} \left(\sin(q_{0}) \sin(q_{4}) \cos(q_{1} + q_{2} + q_{3}) - \cos(q_{0}) \cos(q_{4})\right)$
-
-* **$P_y =$** $l_{2} \sin(q_{0}) - l_{4} \sin(q_{0}) + l_{5} \sin(q_{1} + q_{2}) \cos(q_{0}) + l_{6} \sin(q_{0}) + l_{7} \sin(q_{1} + q_{2} + q_{3}) \cos(q_{0}) + l_{8} \left(\sin(q_{0}) \cos(q_{4}) + \sin(q_{4}) \cos(q_{0}) \cos(q_{1} + q_{2} + q_{3})\right)$
-
-* **$P_z =$** $l_{1} + l_{5} \cos(q_{1} + q_{2}) + l_{7} \cos(q_{1} + q_{2} + q_{3}) - l_{8} \sin(q_{4}) \sin(q_{1} + q_{2} + q_{3})$
-
----
-
-## 🔄 2. Matriz de Rotación (Orientación $R$)
-Los componentes de la orientación del efector final, simplificados trigonométricamente, son:
-
-**Columna 1 (Vector normal, $R_{x}$):**
-* $R_{11} = -\left(\sin(q_{0}) \cos(q_{4}) \cos(q_{1} + q_{2} + q_{3}) + \sin(q_{4}) \cos(q_{0})\right) \cos(q_{5}) - \sin(q_{0}) \sin(q_{5}) \sin(q_{1} + q_{2} + q_{3})$
-* $R_{21} = -\left(\sin(q_{0}) \sin(q_{4}) - \cos(q_{0}) \cos(q_{4}) \cos(q_{1} + q_{2} + q_{3})\right) \cos(q_{5}) + \sin(q_{5}) \sin(q_{1} + q_{2} + q_{3}) \cos(q_{0})$
-* $R_{31} = \sin(q_{5}) \cos(q_{1} + q_{2} + q_{3}) - \sin(q_{1} + q_{2} + q_{3}) \cos(q_{4}) \cos(q_{5})$
-
-**Columna 2 (Vector de deslizamiento, $R_{y}$):**
-* $R_{12} = \left(\sin(q_{0}) \cos(q_{4}) \cos(q_{1} + q_{2} + q_{3}) + \sin(q_{4}) \cos(q_{0})\right) \sin(q_{5}) - \sin(q_{0}) \sin(q_{1} + q_{2} + q_{3}) \cos(q_{5})$
-* $R_{22} = \left(\sin(q_{0}) \sin(q_{4}) - \cos(q_{0}) \cos(q_{4}) \cos(q_{1} + q_{2} + q_{3})\right) \sin(q_{5}) + \sin(q_{1} + q_{2} + q_{3}) \cos(q_{0}) \cos(q_{5})$
-* $R_{32} = \sin(q_{5}) \sin(q_{1} + q_{2} + q_{3}) \cos(q_{4}) + \cos(q_{5}) \cos(q_{1} + q_{2} + q_{3})$
-
-**Columna 3 (Vector de aproximación, $R_{z}$):**
-* $R_{13} = -\sin(q_{0}) \sin(q_{4}) \cos(q_{1} + q_{2} + q_{3}) + \cos(q_{0}) \cos(q_{4})$
-* $R_{23} = \sin(q_{0}) \cos(q_{4}) + \sin(q_{4}) \cos(q_{0}) \cos(q_{1} + q_{2} + q_{3})$
-* $R_{33} = -\sin(q_{4}) \sin(q_{1} + q_{2} + q_{3})$
+![MATRIX](../docs/recursos/imgs/09.jpeg)
