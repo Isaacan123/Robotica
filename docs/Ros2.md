@@ -20,12 +20,12 @@
 
 ---
 
-## 🛠️ 3. Materials
+##  3. Materials
 - No materials required 
 
 ---
 
-## 💻 4. Code 
+##  4. Code 
 
 ### 4.1. Package  (`package.xml`)
 In this part, we have to add the necessary dependencies in our `package.xml`:
@@ -190,9 +190,9 @@ ros2 run my_robot num_publisher
 ros2 run my_robot num_counter
 ```
 
-![Combined Translation and Rotation Resultant](../Robotica/docs/recursos/imgs/publish.png)
+![Combined Translation and Rotation Resultant](publish.png)
 ---
-![Combined Translation and Rotation Resultant](../Robotica/docs/recursos/imgs/count.png)
+![Combined Translation and Rotation Resultant](count.png)
 
 Then, we test the reset function by calling the service directly from the command line:
 
@@ -201,7 +201,7 @@ Then, we test the reset function by calling the service directly from the comman
 ros2 service call /reset_counter isaac_interfaces/srv/SetBool "{data: true}"
 ```
 
-![Combined Translation and Rotation Resultant](../Robotica/docs/recursos/imgs/resett.png)
+![Combined Translation and Rotation Resultant](resett.JPG)
 
 ---
-## 📊 Architecture Diagram
+##  Architecture Diagram
