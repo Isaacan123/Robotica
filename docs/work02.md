@@ -1,25 +1,14 @@
-# 📚 Work 2: Transform Nomenclature
+#  Work 2: Transform Nomenclature
 
-> Documentación del análisis matemático para rotaciones y traslaciones espaciales.
-
-![Homogeneous Transformation Coordinate Frames]
-
----
 
 ## 1) Resumen
 
-- **Nombre del proyecto:** Work 2: Transform Nomenclature
+- **Proyect:** Work 2: Transform Nomenclature
 - **Equipo / Autor(es):** Isaac Antonio Pérez Alemán
-- **Curso / Asignatura:** Ingeniería Mecatrónica
-- **Fecha:** 19/02/2026
-- **Descripción breve:** Actividad enfocada en la representación matemática de rotaciones en el espacio, integrando vectores de rotación y traslación en matrices de transformación homogénea.
+- **Curso / Asignatura:** Applied Robotics
+- **Fecha:** 21/02/2026
 
-!!! tip "Consejo"
-    Para rotaciones sucesivas sobre ejes de referencia fijos, recuerda aplicar siempre la regla de multiplicación por la izquierda (pre-multiplicación).
-
----
-
-## 2) Activity Goals
+## 1) Activity Goals
 
 - Understand the mathematical representation of point rotations in space.
   - Apply the left-multiplication rule for rotations about fixed reference axes.
@@ -28,17 +17,17 @@
 
 ---
 
-## 4) Materials
+## 2) Materials
 
 - No materials required.
 
-## 5) Analysis
+## 3) Analysis
 
 ### Exercise 1:
 
 First Rotation in YA with angle = 45 degrees.
 
-![Successive Rotations around Fixed Axes to 45 degrees](08.jpeg)
+![Successive Rotations around Fixed Axes to 45 degrees](../docs/recursos/imgs/08.jpeg)
 
 Second Rotation in XA with angle = 60 degrees.
 
@@ -47,7 +36,7 @@ Second Rotation in XA with angle = 60 degrees.
 | 0 |  0.500 | -0.866 |
 | 0 |  0.866 |  0.500 |
 
-![Successive Rotations around Fixed Axes to 45 degrees](09.jpeg)
+![Successive Rotations around Fixed Axes to 60 degrees](../docs/recursos/imgs/09.jpeg)
 
 ---
 
@@ -55,21 +44,21 @@ Second Rotation in XA with angle = 60 degrees.
 
 The frame B is rotating relative to A in X with angle = 30 degrees, with ApB origin = [5, 10, 0].
 
-![Combined Translation and Rotation Resultant](10.jpeg)
+![Combined Translation and Rotation Resultant](../docs/recursos/imgs/10.jpeg)
 
 The rotation in X: we have an angle=30 degrees, we have to make the final matrix 
 
-![Combined Translation and Rotation Resultant](11.jpeg)
+![Combined Translation and Rotation Resultant ATB](../docs/recursos/imgs/11.jpeg)
 
 ---
 
-### Exercise 3: Análisis de Traslaciones Múltiples
+### Exercise 3: Analysis of Multiple Linear Displacements
 
 For A_B T we have our origin in ApB origin [3, 0, 0].
 So for our first translation we have:
 
-![Combined Translation and Rotation Resultant](12.jpeg)
+![Combined Translation and Rotation Resultant A_B T](../docs/recursos/imgs/12.jpeg)
 
 For the second matrix (A_C T), we have to determinate the rotation of C relative to A, we have the origin of C in [3 0 2], so:
 
-![Combined Translation and Rotation Resultant](13.jpeg)
+![Combined Translation and Rotation Resultant A-C_T](../docs/recursos/imgs/13.jpeg)
