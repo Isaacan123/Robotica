@@ -1,15 +1,15 @@
-# 📚 ROS2 Service Server: Reset Counter
-# 🤖 Lab 01 – ROS2 Service Server Implementation
+#  ROS2 Service Server: Reset Counter
+#  Lab 01 – ROS2 Service Server Implementation
 
-## 📝 1. Resumen
+
 - **Nombre del proyecto:** ROS2 Service Server (Lab 01)
 - **Equipo / Autor(es):** Isaac Antonio Pérez Alemán
-- **Curso / Asignatura:** Ingeniería Mecatrónica 
+- **Curso / Asignatura:** Applied Robotics
 - **Fecha:** 19/02/2026
 
 ---
 
-## 🎯 2. Objetivos (Activity Goals)
+## 1. Activity Goals
 - Add a functionality to reset the counter to zero.
 - **Create a Service Server:** Create a service server inside the existing `number_counter` node.
 - **Name the service:** `/reset_counter`.
@@ -21,13 +21,13 @@
 ---
 
 ## 🛠️ 3. Materials
-- No hardware materials required (Software implementation).
+- No materials required 
 
 ---
 
-## 💻 4. Code Implementation
+## 💻 4. Code 
 
-### 4.1. Package Configuration (`package.xml`)
+### 4.1. Package  (`package.xml`)
 In this part, we have to add the necessary dependencies in our `package.xml`:
 
 ```xml
@@ -190,9 +190,9 @@ ros2 run my_robot num_publisher
 ros2 run my_robot num_counter
 ```
 
-![Combined Translation and Rotation Resultant](Robotica\docs\recursos\imgs\publish.png)
+![Combined Translation and Rotation Resultant](../Robotica/docs/recursos/imgs/publish.png)
 ---
-![Combined Translation and Rotation Resultant](Robotica\docs\recursos\imgs\count.png)
+![Combined Translation and Rotation Resultant](../Robotica/docs/recursos/imgs/count.png)
 
 Then, we test the reset function by calling the service directly from the command line:
 
@@ -201,7 +201,7 @@ Then, we test the reset function by calling the service directly from the comman
 ros2 service call /reset_counter isaac_interfaces/srv/SetBool "{data: true}"
 ```
 
-![Combined Translation and Rotation Resultant](Robotica\docs\recursos\imgs\resett.png)
+![Combined Translation and Rotation Resultant](../Robotica/docs/recursos/imgs/resett.png)
 
 ---
 ## 📊 Architecture Diagram
