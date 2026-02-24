@@ -201,7 +201,8 @@ Then, we test the reset function by calling the service directly from the comman
 ros2 service call /reset_counter isaac_interfaces/srv/SetBool "{data: true}"
 ```
 
-![resett](../docs/recursos/imgs/resett.JPG)
+![resett](../docs/recursos/imgs/resett.png)
 
 ---
+
 ##  Architecture Diagram
