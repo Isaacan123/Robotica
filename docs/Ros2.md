@@ -190,7 +190,7 @@ ros2 run my_robot num_publisher
 ros2 run my_robot num_counter
 ```
 
-![Combined Translation and Rotation Resultant](../docs/recursos/imgs/publish.png11)
+![Combined Translation and Rotation Resultant](../docs/recursos/imgs/publish.png)
 ![Combined Translation and Rotation Resultant](../docs/recursos/imgs/count.png)
 
 Then, we test the reset function by calling the service directly from the command line:
@@ -204,3 +204,4 @@ ros2 service call /reset_counter isaac_interfaces/srv/SetBool "{data: true}"
 
 ---
 ## 📊 Architecture Diagram
+
