@@ -25,6 +25,10 @@ System Composition:
 ---
 
 ##  3. Analysis
+
+![Diagrama del sistema](recursos/imgs/baterynode.png)
+<img src="../recursos/imgs/baterynode.png" alt="Diagrama del sistema" width="420">
+
  ![publisher](../docs/recursos/imgs/baterynode.png)
 
 ### Battery Node (Client)  
