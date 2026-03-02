@@ -189,10 +189,16 @@ ros2 run my_robot num_publisher
 # Terminal 2: Run the counter
 ros2 run my_robot num_counter
 ```
+<!-- Control de tamaño usando HTML (cuando se requiera) -->
 
-![publisher](../docs/recursos/imgs/publish.png)
----
-![counter](../docs/recursos/imgs/count.png)
+
+![Diagrama del sistema](recursos/imgs/publish.png)
+<img src="../recursos/imgs/publish.png" alt="Diagrama del sistema" width="420">
+
+
+![Diagrama del sistema](recursos/imgs/count.png)
+<img src="../recursos/imgs/count.png" alt="Diagrama del sistema" width="420">
+
 
 Then, we test the reset function by calling the service directly from the command line:
 
@@ -201,8 +207,9 @@ Then, we test the reset function by calling the service directly from the comman
 ros2 service call /reset_counter isaac_interfaces/srv/SetBool "{data: true}"
 ```
 
-![resett](../docs/recursos/imgs/resett.png)
+![Diagrama del sistema](recursos/imgs/resett.png)
+<img src="../recursos/imgs/resett.png" alt="Diagrama del sistema" width="420">
+
 
 ---
-
 ##  Architecture Diagram
