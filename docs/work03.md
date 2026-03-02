@@ -1,18 +1,16 @@
-# 📚 Work 3: Activity 01 - ROS2 Topics
-
-> Documentación de la implementación del patrón de comunicación Publisher/Subscriber mediante Tópicos en ROS2.
+# Work 3: Activity 01 - ROS2 Topics
 
 ---
 
-## 1) Resumen
+
 
 - **Nombre del proyecto:** Work 3: Activity 01 - ROS2 Topics
 - **Equipo / Autor(es):** Isaac Antonio Pérez Alemán
-- **Curso / Asignatura:** Ingeniería Mecatrónica
+- **Curso / Asignatura:**  
 - **Fecha:** 19/02/2026
 
 
-## 2) Activity Goals
+## 1) Activity Goals
 
 -  Understand the Publisher/Subscriber      communication pattern.
   - Create a ROS2 node that publishes messages to a specific topic.
@@ -22,10 +20,10 @@
 
 ---
 
-## 3) Materiales
+## 2) Materiales
 - No materials required.
 
-## 4) Code
+## 3) Code
 ### Publisher node
 
 
@@ -96,3 +94,8 @@ def listener_callback(self, msg):
 if name == 'main': main() with the two codes, we have our program:
 
 ![Successive Rotations around Fixed Axes to 45 degrees](14.png)
+
+![Diagrama del sistema](recursos/imgs/14.png)
+
+<!-- Control de tamaño usando HTML (cuando se requiera) -->
+<img src="../recursos/imgs/14.png" alt="Diagrama del sistema" width="420">
