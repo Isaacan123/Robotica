@@ -34,7 +34,7 @@
 
 ![kuka](../docs/recursos/imgs/06.jpeg)
 
-- **Calculation of the Final Matrix:**
+- **Cálculo de la Matriz Final:**
   After getting the DH parameters table and the matrix of each link, we can compute the final matrix. For this step, we use a MATLAB Live Script to simplify the calculations.
 
 ### MATLAB Code
@@ -88,9 +88,6 @@ We can make a better analysis with the UR, just rewrite each joint and link.
 
 After to get the DH parametrs table and the matrix of each number, we can do the final matrix, for this step we can use MatLab live script ffor simplify the calculous.
 
-
-
-```matlab
 clear; clc;
 
 syms q0 q1 q2 q3 q4 q5 real
@@ -120,9 +117,9 @@ end
 
 disp('Matriz de Transformación Final T_0_6:');
 pretty(T_final)
-```
+
 ### Final Matrix
 -This the final matrix given by the MatLab code.
 
-![MATRIX](../docs/recursos/imgs/.jpeg)
 
+![MATRIX](../docs/recursos/imgs/09.jpeg)

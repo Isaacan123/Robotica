@@ -26,7 +26,7 @@
 ## 3) Code
 ### Publisher node
 
-
+```
 import rclpy 
 from rclpy.node import Node 
 from example_interfaces.msg import Int64
@@ -92,10 +92,7 @@ def listener_callback(self, msg):
      node = NumberCounter() rclpy.spin(nodito) rclpy.shutdown()
 
 if name == 'main': main() with the two codes, we have our program:
+```
 
-![Successive Rotations around Fixed Axes to 45 degrees](14.png)
 
 ![Diagrama del sistema](recursos/imgs/14.png)
-
-<!-- Control de tamaño usando HTML (cuando se requiera) -->
-<img src="../recursos/imgs/14.png" alt="Diagrama del sistema" width="420">

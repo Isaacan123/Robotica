@@ -46,7 +46,8 @@ Behavior:
 - Immediately republishes the updated counter value from the subscriber callback  
 - Includes a service that, when triggered with a True request, resets the counter back to zero  
 
-```xml
+```
+xml
         self.server_= self.create_service(SetBool, #Service TYPE
                                           "reset_counter", #service Name
                                           self.reset_callback
@@ -135,7 +136,8 @@ if __name__ == "__main__":
 
 First, we run the nodes for the publisher and the counter in separate Ubuntu terminals:
 
-```bash
+```
+--bash
 import rclpy
 from rclpy.node import Node
 from example_interfaces.msg import Int64

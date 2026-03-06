@@ -1,7 +1,6 @@
 #  Work 2: Transform Nomenclature
 
 
-## 1) Resumen
 
 - **Proyect:** Work 2: Transform Nomenclature
 - **Equipo / Autor(es):** Isaac Antonio Pérez Alemán
@@ -27,8 +26,12 @@
 
 First Rotation in YA with angle = 45 degrees.
 
-![Successive Rotations around Fixed Axes to 45 degrees](../docs/recursos/imgs/08.jpeg)
 
+
+![Diagrama del sistema](recursos/imgs/14.png)
+
+<!-- Control de tamaño usando HTML (cuando se requiera) -->
+![Diagrama del sistema](recursos/imgs/08.jpeg)
 Second Rotation in XA with angle = 60 degrees.
 
 2) Matriz Rx(60°):

@@ -1,4 +1,5 @@
 # Activity 5: Robot Modeling with URDF
+- **Team:** Isaac Antonio Pérez Alemán & Carlos Galicia
 
 This activity focuses on replicating **five robots** within a simple 3D environment in Linux, using the **Unified Robot Description Format (URDF)**.  
 The main objective is to simulate robot motion by combining three basic geometric shapes:

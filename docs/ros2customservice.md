@@ -26,12 +26,10 @@ System Composition:
 
 ##  3. Analysis
 
+![Diagrama del sistema](recursos/imgs/publish.png)
+
 ![Diagrama del sistema](recursos/imgs/baterynode.png)
-<img src="../recursos/imgs/baterynode.png" alt="Diagrama del sistema" width="420">
-
- ![publisher](../docs/recursos/imgs/baterynode.png)
-
-### Battery Node (Client)  
+Node (Client)  
 
 Description:  
 This node models the battery level of the system. The battery begins fully charged at 100%, gradually discharges until it reaches 0%, then switches to charging mode and recharges back to 100%. This cycle repeats continuously. A timer is used to periodically update the battery status.  
@@ -66,7 +64,8 @@ In this implementation, both custom services and message types are required.
 
 ### Code 
 
-``` code 1
+```
+ code 1
 import rclpy
 from rclpy.node import Node
 
@@ -75,7 +74,7 @@ from isaac_interfaces.srv import Setled
 ```
 ### Imports and Package Structure  
 
-In this project, we rely on elements from the `hector_interfaces` package, which contains two key folders:  
+In this project, we rely on elements from the `isaac_interfaces` package, which contains two key folders:  
 - `srv` → defines the service interfaces  
 - `msg` → defines the message types  
 
@@ -85,10 +84,11 @@ Service Details:
  
 ### Code 
 
-```float32 battery_level
+```
+float32 battery_level
 bool request
 bool charging
----
+
 bool success
 ```
 -It is used to communicate the LED’s status between nodes, ensuring consistency across the system.  
@@ -97,13 +97,13 @@ bool success
     int32[] led
 ```
 
-A client component, which interacts with the service to send requests.
+-A client component, which interacts with the service to send requests.
 
-```
 ![publisher](../docs/recursos/imgs/UP.png)
 
 
-``class BatteryClient(Node):
+``
+class BatteryClient(Node):
 
     def __init__(self):
         super().__init__("battery_client")
@@ -126,7 +126,7 @@ A client component, which interacts with the service to send requests.
 - Additional logic is included to handle future responses and prevent potential errors.  
  
  ```
-        def update_battery(self):
+  def update_battery(self):
 
         if self.charging:
             self.battery_level += 1.0
@@ -157,10 +157,13 @@ A client component, which interacts with the service to send requests.
 
         if response.success:
             self.get_logger().info("charging battery.")
+
+```
  ```
+
 ### CODE 
+
  ```
-#!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
 from hector_interfaces.msg import LedPanel
@@ -325,9 +328,13 @@ if __name__ == "__main__":
 
 -Battery in Normal Operation  
 
-![publisher](../docs/recursos/imgs/BATERY.png)
+![Diagrama del sistema](recursos/imgs/BATERY.png)
 
+<!-- Control de tamaño usando HTML (cuando se requiera) -->
 -Battery in Charging Mode  
 
+![Diagrama del sistema](recursos/imgs/BATERY2.png)
+
+<!-- Control de tamaño usando HTML (cuando se requiera) -->
 ![publisher](../docs/recursos/imgs/BATERY2.png)
 

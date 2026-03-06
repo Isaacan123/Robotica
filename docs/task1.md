@@ -1,4 +1,4 @@
-# 📚 Work 1: Examples of Robots by Morphology
+#  Work 1: Examples of Robots by Morphology
 
 > Documentación y clasificación de robots industriales según su morfología cinemática y configuración de articulaciones.
 
