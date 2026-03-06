@@ -64,7 +64,8 @@ The callback evaluates the boolean `request.data`:
 
 ### 4.3. Full Node Code (`isaac_counter.py`)
 
-```python
+``` 
+python
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
@@ -134,7 +135,8 @@ if __name__ == "__main__":
 
 ### 4.4. Workspace Configuration (`setup.py`)
 
-```python
+```
+python
 from setuptools import find_packages, setup
 
 package_name = 'my_robot'
@@ -182,7 +184,8 @@ setup(
 
 First, we run the nodes for the publisher and the counter in separate Ubuntu terminals:
 
-```bash
+```
+bash
 # Terminal 1: Run the publisher
 ros2 run my_robot num_publisher
 
@@ -193,22 +196,20 @@ ros2 run my_robot num_counter
 
 
 ![Diagrama del sistema](recursos/imgs/publish.png)
-<img src="../recursos/imgs/publish.png" alt="Diagrama del sistema" width="420">
 
 
 ![Diagrama del sistema](recursos/imgs/count.png)
-<img src="../recursos/imgs/count.png" alt="Diagrama del sistema" width="420">
 
 
 Then, we test the reset function by calling the service directly from the command line:
 
-```bash
+```
+bash
 # Terminal 3: Call the reset service
 ros2 service call /reset_counter isaac_interfaces/srv/SetBool "{data: true}"
 ```
 
 ![Diagrama del sistema](recursos/imgs/resett.png)
-<img src="../recursos/imgs/resett.png" alt="Diagrama del sistema" width="420">
 
 
 ---
