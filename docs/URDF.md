@@ -125,7 +125,8 @@ isaac@Aleman:~/ros2_ws/src/my_robot_example$ ros2 launch urdf_tutorial display.l
 </robot>
 ```
 ![Diagrama del sistema](recursos/imgs/R1.png)
-<img src="../recursos/imgs/R1.png" alt="Diagrama del sistema" width="420">
+
+### Code 2
 
 ```
 <?xml version="1.0"?>
@@ -223,7 +224,8 @@ isaac@Aleman:~/ros2_ws/src/my_robot_example$ ros2 launch urdf_tutorial display.l
 ```
 
 ![Diagrama del sistema](recursos/imgs/R2.png)
-<img src="../recursos/imgs/R1.png" alt="Diagrama del sistema" width="420">
+
+### Code 3
 
 ```
 <?xml version="1.0"?>
@@ -386,7 +388,8 @@ isaac@Aleman:~/ros2_ws/src/my_robot_example$ ros2 launch urdf_tutorial display.l
 </robot>
 ```
 ![Diagrama del sistema](recursos/imgs/R3.png)
-<img src="../recursos/imgs/R1.png" alt="Diagrama del sistema" width="420">
+
+### Code 4
 
 ```
 <?xml version="1.0"?>
@@ -580,7 +583,8 @@ isaac@Aleman:~/ros2_ws/src/my_robot_example$ ros2 launch urdf_tutorial display.l
 ```
 
 ![Diagrama del sistema](recursos/imgs/R4.png)
-<img src="../recursos/imgs/R1.png" alt="Diagrama del sistema" width="420">
+
+### Code 5
 
 ```
 <?xml version="1.0"?>
@@ -748,4 +752,3 @@ isaac@Aleman:~/ros2_ws/src/my_robot_example$ ros2 launch urdf_tutorial display.l
 </robot>
 ```
 ![Diagrama del sistema](recursos/imgs/R5.png)
-<img src="../recursos/imgs/R1.png" alt="Diagrama del sistema" width="420">
