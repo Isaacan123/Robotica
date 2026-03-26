@@ -1,5 +1,5 @@
 # Activity : Trajectory Planning II: Linear Cartesian Trajectories
-- **Team:** Isaac Antonio Pérez Alemán & Carlos Galicia
+- **Team:** Isaac Antonio Pérez Alemán 
 
 
 ![Diagrama del sistema](recursos/imgs/e1.jpeg)
